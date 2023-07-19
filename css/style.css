@@ -19,7 +19,11 @@ a{
 }
 
 /* --- HEADER --- */
+header nav div a {
+    color: red;
+}
 
+/* 
 header{
     background-color: black;
     padding: 5px 15px 5px 15px;
@@ -44,13 +48,15 @@ header a{
 }
 
 header nav ul li{
-    padding: 10px;
-}
+    padding: 10px; 
+} */
+
 /* --- MAIN --- */
 /* --- Primera seccion - Hero (a Nosotros) --- */
 .hero{
+    padding-top: 80px;
     width: 100%;
-    height: calc(100vh - 86px);
+    height: 100vh;
     background-image: url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
