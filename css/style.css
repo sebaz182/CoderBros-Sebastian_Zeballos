@@ -1,62 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* --- RESET --- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* --- HEADER --- */
-header nav div a {
-    color: red;
-}
 
-/* 
-header{
+header nav {
     background-color: black;
-    padding: 5px 15px 5px 15px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-h1{
-    font-size: 50px;
-    font-weight: 500;
-}
-
-header nav ul{
-    display: flex;
-}
-
-header a{
-    color: white;
-}
-
-header nav ul li{
-    padding: 10px; 
-} */
 
 /* --- MAIN --- */
 /* --- Primera seccion - Hero (a Nosotros) --- */
-.hero{
-    padding-top: 80px;
+.hero {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 56px);
     background-image: url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
@@ -66,31 +39,36 @@ header nav ul li{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
-    align-items:center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.hero h2{
-    font-size: 80px; 
+.sections {
+    height:  calc(100vh - 114px);
+}
+
+.hero h2 {
+    font-size: 80px;
     font-weight: 800;
     padding: 15px 20px 15px 20px;
     border: 15px white double;
 }
 
-.hero p{
+.hero p {
     font-size: 35px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.boton{
+.boton {
     background-color: black;
     color: white;
     border: 1px white solid;
     padding: 10px 25px 10px 25px;
 }
+
 /* --- Segunda seccion - Servicios y Proyectos ---*/
-.serv-proy{
+.serv-proy {
     background-color: #c6c5b9;
     width: 100%;
     display: flex;
@@ -98,32 +76,32 @@ header nav ul li{
     justify-content: center;
 }
 
-.serv-proy div{
+.serv-proy div {
     border: 1px black solid;
     width: 100%;
     height: 100%;
     padding-bottom: 30px;
 }
 
-.serv-proy div h2{
+.serv-proy div h2 {
     padding: 15px;
 }
 
-.serv-proy div h3{
-    padding-bottom: 20px; 
+.serv-proy div h3 {
+    padding-bottom: 20px;
 }
 
-.serv-proy div img{
+.serv-proy div img {
     width: 100%;
     height: 500px;
 }
 
-.experiencia{
+.experiencia {
     background-color: rgb(194, 194, 194);
     padding: 15px;
 }
 
-.experiencia div{
+.experiencia div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,37 +110,34 @@ header nav ul li{
 
 }
 
-.experiencia div img{
+.experiencia div img {
     width: 45%;
     height: 250px;
 }
 
-.experiencia div h3{
+.experiencia div h3 {
     width: 55%;
     margin: 15px;
 }
 
 /*---TALENTOS---*/
 
-.talentos{
-    
-}
 
-.talentos h2{
+.talentos h2 {
     background-color: black;
     color: white;
     padding: 15px;
     text-align: center;
 }
 
-.talentos .perfiles{
+.talentos .perfiles {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.talentos .perfiles div{
+.talentos .perfiles div {
     width: 250px;
     height: 350px;
     border: 2px solid black;
@@ -171,55 +146,59 @@ header nav ul li{
     color: white;
     margin: 20px;
 
-    box-shadow: 7px 5px 23px 0px rgba(0,0,0,0.7);
--webkit-box-shadow: 7px 5px 23px 0px rgba(0,0,0,0.7);
--moz-box-shadow: 7px 5px 23px 0px rgba(0,0,0,0.7);
+    box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
 }
 
-.talentos .perfiles div h3{
+.talentos .perfiles div h3 {
     padding: 10px;
     font-size: 20px;
 }
 
-.talentos .perfiles div h4{
+.talentos .perfiles div h4 {
     font-size: 15px;
     font-weight: 200;
 
 }
 
-.talentos .perfiles div img{
+.talentos .perfiles div img {
     width: 250px;
     height: 200px;
 }
 
 /*--- BOTON FIJO WHATSAPP ---*/
-.whatsapp{
+.whatsapp {
     position: fixed;
     bottom: 80px;
     right: 40px;
 }
-.whatsapp img{
+
+.whatsapp img {
     width: 50px;
     height: 50px;
 }
 
 /* --- FOOTER --- */
 
-.footer{
-    background-color: #605F5E;
+.footer {
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
+
 }
 
-.footer h2{
+.footer h2 {
     font-size: 20px;
     font-weight: 200;
 }
 
-.footer div img{
-    width: 20px;
-    height: 20px;
+.footer div a {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+
 }
