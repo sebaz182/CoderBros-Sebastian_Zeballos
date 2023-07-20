@@ -44,7 +44,7 @@ header nav {
 }
 
 .sections {
-    height:  calc(100vh - 114px);
+    height: calc(100vh - 114px);
 }
 
 .hero h2 {
@@ -99,14 +99,6 @@ header nav {
 .experiencia {
     background-color: rgb(194, 194, 194);
     padding: 15px;
-}
-
-.experiencia div {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%; */
 }
 
 .experiencia div div img {
@@ -182,19 +174,15 @@ header nav {
 .footer {
     background-color: black;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
-
 }
 
-.footer h2 {
-    font-size: 20px;
+.footer div h2 {
+    font-size: 15px;
     font-weight: 200;
 }
 
-.footer div a {
+.footer div div a {
     color: white;
     font-size: 20px;
     padding: 8px;
