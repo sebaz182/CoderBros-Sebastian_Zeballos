@@ -216,6 +216,8 @@ header nav {
     -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
     position: relative;
+    border: solid 5px white;
+    border-radius: 1%;
 }
 
 .grid-img div{
