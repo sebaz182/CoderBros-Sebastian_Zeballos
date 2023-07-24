@@ -231,7 +231,6 @@ header nav {
     padding: 8px;
 }
 
-
 .cabecera{
     grid-column: span 3;
 }
@@ -245,6 +244,18 @@ header nav {
     grid-row: span 2;
 }
 
+/* PAGINA CONTACTO */
+.contacto{
+margin-top: 45px;
+margin-bottom: 80px;
+}
+
+
+.maps{
+    text-align: right;
+}
+
+/* MEDIA QUERY */
 @media screen and (max-width: 950px) {
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
