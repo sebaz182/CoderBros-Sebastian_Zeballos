@@ -1,0 +1,21 @@
+/*--- FOOTER ---*/
+footer{
+    background-color:$color-primario;
+    color: $color-secundario;
+    padding: 10px;
+    div{
+        div{
+            h2{
+                font-size: 15px;
+                font-weight: 200; 
+            }
+        }
+        div{
+            a{
+                color: white;
+                font-size: 20px;
+                padding: 8px;
+            }
+        }
+    }
+}

@@ -1,3 +1,6 @@
-h2{
-    color: black;
-}
+@import "./base/generals";
+@import "./base/variables";
+@import "./components/header";
+@import "./components/layout";
+@import "./components/footer";
+@import "./base/mediaquery";
