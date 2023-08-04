@@ -9,7 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: $color-secundario;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
         font-size: 80px;
         font-weight: 800;
         padding: 15px 20px 15px 20px;
-        border: 15px white double;
+        border: 15px $color-secundario double;
     }
     p{
         font-size: 35px;
@@ -33,14 +33,14 @@
 }
 
 .boton {
-    background-color: black;
-    color: white;
-    border: 2px white solid;
+    background-color: $color-primario;
+    color: $color-secundario;
+    border: 2px $color-secundario solid;
     border-radius: 2%;
     padding: 10px 25px 10px 25px;
     &:hover{
         background-color: grey;
-        color: white;
+        color: $color-secundario;
     }
 }
 
@@ -51,7 +51,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: $color-secundario;
     div{
         width: 100%;
         height: 100%;
@@ -91,8 +91,8 @@
 /*---TALENTOS---*/
 .talentos{
     h2{
-        background-color: black;
-        color: white;
+        background-color: $color-primario;
+        color: $color-secundario;
         padding: 15px;
         text-align: center;
     }
@@ -104,11 +104,11 @@
         div{
             width: 255px;
             height: 350px;
-            border: 2px solid black;
-            background-color: black;
+            border: 2px solid $color-primario;
+            background-color: $color-primario;
             border-radius: 1%;
             text-align: center;
-            color: white;
+            color: $color-secundario;
             margin: 20px;
         
             box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
@@ -151,8 +151,9 @@
     padding: 15px;
     height: 150px;
     h1{
-        font-size: 50px;
+        font-size: 60px;
         border: none;
+        font-weight: 800;
     }
     p{
         font-size: 20px;
@@ -183,7 +184,7 @@
     -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
     position: relative;
-    border: solid 5px white;
+    border: solid 5px $color-secundario;
     border-radius: 1%;
     div{
         position: absolute;
@@ -192,7 +193,7 @@
         display: flex;
         justify-content: space-around;
         background-color: rgba(0, 0, 0, 0.666);
-        color: white;
+        color: $color-secundario;
         padding: 8px;
     }
 }
@@ -226,9 +227,10 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: start;
-    background-color: black;
-    color: white;
+    background-color: $color-primario;
+    color: $color-secundario;
     padding: 20px;
+    padding-top: 50px;
 
     & .servicios-cont{
         width: 400px;
