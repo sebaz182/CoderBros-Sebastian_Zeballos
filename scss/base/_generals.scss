@@ -19,18 +19,18 @@ a {
     text-decoration: none;
 }
 
-/* --- HERO ---*/
-.sections{
-    height: calc(100vh - 114px);
+
+/* Para posicionar el footer al final sin importar el contenido */
+html {
+    height: 100%;
 }
-.boton {
-    background-color: black;
-    color: white;
-    border: 2px white solid;
-    border-radius: 2%;
-    padding: 10px 25px 10px 25px;
-    &:hover{
-        background-color: gray;
-        color: white;
-    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
 }

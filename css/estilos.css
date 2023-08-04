@@ -14,20 +14,33 @@ li {
 a {
   text-decoration: none; }
 
-/* --- HERO ---*/
-.sections {
-  height: calc(100vh - 114px); }
+/* Para posicionar el footer al final sin importar el contenido */
+html {
+  height: 100%; }
 
-.boton {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+footer {
+  margin-top: auto; }
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.galeria {
   background-color: black;
-  color: white;
-  border: 2px white solid;
-  border-radius: 2%;
-  padding: 10px 25px 10px 25px; }
-  .boton:hover {
-    background-color: gray;
-    color: white; }
+  border: 1px black solid; }
 
+/* --- HEADER --- */
+header nav {
+  background-color: #202020; }
+
+/* --- MAIN --- */
+/* --- Primera seccion - Hero (a Nosotros) --- */
 .hero {
   width: 100%;
   height: calc(100vh - 56px);
@@ -42,7 +55,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
-  .hero h2 {
+  .hero h1 {
     font-size: 80px;
     font-weight: 800;
     padding: 15px 20px 15px 20px;
@@ -52,7 +65,20 @@ a {
     padding-left: 100px;
     padding-right: 100px; }
 
-/*--- seccion servicios y proyectos ---*/
+.section {
+  height: calc(100vh - 114px); }
+
+.boton {
+  background-color: black;
+  color: white;
+  border: 2px white solid;
+  border-radius: 2%;
+  padding: 10px 25px 10px 25px; }
+  .boton:hover {
+    background-color: grey;
+    color: white; }
+
+/* --- Segunda seccion - Servicios y Proyectos ---*/
 .serv-proy {
   background-color: #676765e9;
   width: 100%;
@@ -74,22 +100,160 @@ a {
       width: 100%;
       height: 400px; }
 
-/*--- FOOTER ---*/
-footer {
+/* Experiencia */
+.experiencia {
+  background-color: #c2c2c2;
+  padding: 15px; }
+  .experiencia div div img {
+    width: 100%;
+    height: 300px; }
+  .experiencia div div p {
+    margin: 20px; }
+
+/*---TALENTOS---*/
+.talentos h2 {
   background-color: black;
   color: white;
+  padding: 15px;
+  text-align: center; }
+
+.talentos .perfiles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .talentos .perfiles div {
+    width: 255px;
+    height: 350px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 1%;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7); }
+    .talentos .perfiles div h3 {
+      padding-top: 10px;
+      font-size: 25px; }
+    .talentos .perfiles div h4 {
+      font-size: 18px;
+      font-weight: 500; }
+    .talentos .perfiles div h5 {
+      font-size: 15px;
+      font-weight: 200; }
+    .talentos .perfiles div img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; }
+
+/*--- BOTON FIJO WHATSAPP ---*/
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 30px; }
+  .whatsapp img {
+    width: 45px;
+    height: 45px; }
+
+.titulo {
+  padding: 15px;
+  height: 150px; }
+  .titulo h1 {
+    font-size: 50px;
+    border: none; }
+  .titulo p {
+    font-size: 20px; }
+
+.grid-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  grid-auto-rows: 250px;
+  padding-top: 25px;
+  padding-bottom: 15px; }
+  .grid-container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.grid-img {
+  box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+  position: relative;
+  border: solid 5px white;
+  border-radius: 1%; }
+  .grid-img div {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.666);
+    color: white;
+    padding: 8px; }
+
+.cabecera {
+  grid-column: span 3; }
+
+.lateral {
+  grid-row: span 2; }
+
+.principal {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.contacto {
+  margin-top: 45px;
+  margin-bottom: 45px; }
+
+.maps {
+  text-align: right; }
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: black;
+  color: white;
+  padding: 20px; }
+  .servicios .servicios-cont {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px; }
+    .servicios .servicios-cont img {
+      width: 60px; }
+    .servicios .servicios-cont .servicios-cont-txt {
+      padding-left: 20px; }
+      .servicios .servicios-cont .servicios-cont-txt h2 {
+        font-size: 32px;
+        font-weight: 900; }
+      .servicios .servicios-cont .servicios-cont-txt p {
+        text-align: left;
+        font-size: 16px; }
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #202020;
+  color: white;
   padding: 10px; }
-  footer div div h2 {
+  .footer div div h2 {
     font-size: 15px;
     font-weight: 200; }
-  footer div div a {
+  .footer div div a {
     color: white;
     font-size: 20px;
     padding: 8px; }
 
 /* MEDIA QUERY */
 @media screen and (max-width: 950px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 50px;
     font-weight: 700; }
   .hero p {
@@ -100,9 +264,9 @@ footer {
     position: fixed;
     bottom: 130px;
     right: 35px; }
-  .whatsapp img {
-    width: 45px;
-    height: 45px; }
+    .whatsapp img {
+      width: 45px;
+      height: 45px; }
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 250px; }
@@ -112,15 +276,15 @@ footer {
   .titulo {
     padding: 5px;
     height: 120px; }
-  .titulo h3 {
-    font-size: 40px; }
-  .titulo p {
-    font-size: 15px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+    .titulo h1 {
+      font-size: 40px; }
+    .titulo p {
+      font-size: 15px;
+      padding-left: 50px;
+      padding-right: 50px; } }
 
 @media screen and (max-width: 500px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 40px;
     font-weight: 500; }
   .hero p {
@@ -138,9 +302,9 @@ footer {
   .titulo {
     padding: 5px;
     height: 110px; }
-  .titulo h3 {
-    font-size: 30px; }
-  .titulo p {
-    font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px; } }
+    .titulo h1 {
+      font-size: 30px; }
+    .titulo p {
+      font-size: 15px;
+      padding-left: 40px;
+      padding-right: 40px; } }

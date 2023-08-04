@@ -1,20 +1,19 @@
-/*--- FOOTER ---*/
-footer{
-    background-color:$color-primario;
-    color: $color-secundario;
+/* --- FOOTER --- */
+
+.footer {
+    background-color: #202020;
+    color: white;
     padding: 10px;
     div{
         div{
             h2{
                 font-size: 15px;
-                font-weight: 200; 
+                font-weight: 200;
             }
-        }
-        div{
             a{
                 color: white;
                 font-size: 20px;
-                padding: 8px;
+                padding: 8px; 
             }
         }
     }

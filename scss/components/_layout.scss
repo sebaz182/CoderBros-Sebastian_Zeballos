@@ -1,4 +1,7 @@
-.hero {
+// INDEX.HTML
+/* --- MAIN --- */
+/* --- Primera seccion - Hero (a Nosotros) --- */
+.hero{
     width: 100%;
     height: calc(100vh - 56px);
     background-image: url(../img/banner.jpg);
@@ -11,21 +14,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    h2 {
+    align-items: center;    
+    h1{
         font-size: 80px;
         font-weight: 800;
         padding: 15px 20px 15px 20px;
         border: 15px white double;
     }
-    p {
+    p{
         font-size: 35px;
         padding-left: 100px;
-        padding-right: 100px;   
+        padding-right: 100px; 
     }
 }
-/*--- seccion servicios y proyectos ---*/
-.serv-proy{
+
+.section{
+    height: calc(100vh - 114px);
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+    border-radius: 2%;
+    padding: 10px 25px 10px 25px;
+    &:hover{
+        background-color: grey;
+        color: white;
+    }
+}
+
+/* --- Segunda seccion - Servicios y Proyectos ---*/
+.serv-proy {
     background-color: #676765e9;
     width: 100%;
     display: flex;
@@ -42,14 +62,194 @@
         }
         h3{
             font-size: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 20px; 
         }
         img{
             width: 100%;
             height: 400px;
         }
-        a{
+    }
+}
 
+/* Experiencia */
+.experiencia {
+    background-color: rgb(194, 194, 194);
+    padding: 15px;
+    div{
+        div{
+            img{
+                width: 100%;
+                height: 300px;
+            }
+            p{
+                margin: 20px;  
+            }
         }
     }
 }
+
+/*---TALENTOS---*/
+.talentos{
+    h2{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    & .perfiles{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width: 255px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 1%;
+            text-align: center;
+            color: white;
+            margin: 20px;
+        
+            box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+            -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+            h3{
+                padding-top: 10px;
+                font-size: 25px;
+            }
+            h4{
+                font-size: 18px;
+                font-weight: 500; 
+            }
+            h5{
+                font-size: 15px;
+                font-weight: 200; 
+            }
+            img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*--- BOTON FIJO WHATSAPP ---*/
+.whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+//TITULO PARA TODAS LAS SECCIONES
+.titulo{
+    padding: 15px;
+    height: 150px;
+    h1{
+        font-size: 50px;
+        border: none;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+// PROYECTOS HTML
+// GRIDS
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: 250px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.grid-img {
+    box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    position: relative;
+    border: solid 5px white;
+    border-radius: 1%;
+    div{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.666);
+        color: white;
+        padding: 8px;
+    }
+}
+
+.cabecera {
+    grid-column: span 3;
+}
+
+.lateral {
+    grid-row: span 2;
+}
+
+.principal {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+// CONTACTO HTML
+.contacto {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.maps {
+    text-align: right;
+}
+
+// SERVICIOS HTML
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: start;
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    & .servicios-cont{
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 25px;
+        img{
+            width: 60px;
+        }
+        & .servicios-cont-txt{
+            padding-left: 20px;
+            h2{
+                font-size: 32px;
+                font-weight: 900;
+            }
+            p{
+                text-align:left;
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+

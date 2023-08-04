@@ -11,7 +11,7 @@
             crossorigin="anonymous">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/estilos.css">
         <title>Proyectos</title>
     </head>
     <body>
@@ -54,27 +54,52 @@
         </header>
         <main>
             <section class="titulo hero">
-                <h3>Proyectos</h3>
+                <h1>Proyectos</h1>
                 <p>Conoce todos los proyectos realizados por nosotros</p>
             </section>
             <section class="grid-container">
                 <div class="grid-img cabecera">
-                    <img src="../img/g1.jpg" alt="">
+                    <img src="../img/g1.jpg" alt>
                     <div>
                         <h3>Titulo1</h3>
                         <!-- Button modal -->
-                        <button type="button" class="btn btn-secondary"
+                        <button type="button" class="btn btn-primary"
                             data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Ver detalle
+                            data-bs-target="#exampleModal">
+                            Launch demo modal
                         </button>
                         <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"
+                                            id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button"
+                                            class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-img lateral">
-                    <img src="../img/g2.jpeg" alt="">
+                    <img src="../img/g2.jpeg" alt>
                     <div>
-                        <h3>Titulo2</h3>
+                        <h2>Titulo2</h2>
                         <!-- Button modal -->
                         <button type="button" class="btn btn-secondary"
                             data-bs-toggle="modal"
@@ -85,9 +110,9 @@
                     </div>
                 </div>
                 <div class="grid-img principal">
-                    <img src="../img/g3.jpg" alt="">
+                    <img src="../img/g3.jpg" alt>
                     <div>
-                        <h3>Titulo3</h3>
+                        <h2>Titulo3</h2>
                         <!-- Button modal -->
                         <button type="button" class="btn btn-secondary"
                             data-bs-toggle="modal"
@@ -98,9 +123,9 @@
                     </div>
                 </div>
                 <div class="grid-img">
-                    <img src="../img/g4.png" alt="">
+                    <img src="../img/g4.png" alt>
                     <div>
-                        <h3>Titulo4</h3>
+                        <h2>Titulo4</h2>
                         <!-- Button modal -->
                         <button type="button" class="btn btn-secondary"
                             data-bs-toggle="modal"
@@ -111,9 +136,9 @@
                     </div>
                 </div>
                 <div class="grid-img">
-                    <img src="../img/g5.jpg" alt="">
+                    <img src="../img/g5.jpg" alt>
                     <div>
-                        <h3>Titulo5</h3>
+                        <h2>Titulo5</h2>
                         <!-- Button modal -->
                         <button type="button" class="btn btn-secondary"
                             data-bs-toggle="modal"
@@ -124,9 +149,9 @@
                     </div>
                 </div>
                 <div class="grid-img">
-                    <img src="../img/g6.jpeg" alt="">
+                    <img src="../img/g6.jpeg" alt>
                     <div>
-                        <h3>Titulo6</h3>
+                        <h2>Titulo6</h2>
                         <!-- Button modal -->
                         <button type="button" class="btn btn-secondary"
                             data-bs-toggle="modal"
@@ -173,6 +198,7 @@
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>

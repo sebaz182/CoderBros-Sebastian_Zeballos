@@ -1,2 +1,73 @@
 $color-primario: black;
 $color-secundario: white;
+
+
+//* LISTAS
+$paleta-colores: 
+red,
+green,
+blue,
+pink,
+tomato,
+gray;
+
+$font-size:
+15px,
+20px,
+24px,
+36px,
+48px;
+
+//* OPERACIONES
+
+$alto-header: 56px;
+
+
+//* EXTENDS
+//para optimizar 
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    background-color: black;
+    border: 1px black solid;
+    @extend %flex;
+}
+
+//MIXINS
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+//CONDICIONALES
+//* OPERADORES DE COMPARACION
+// == SON IGUALES
+// != ES DIFERENTE
+// > MAYOR QUE
+// < MENOR QUE
+// >= MAYOR O IGUAL
+// <= MENOR O IGUAL
+
+// if (condicional){
+//     se ejecuta este codigo
+// }else{
+//     sino, se ejecuta esto
+// }
+///lo frabajamos con mixin
+
+@mixin modos ($modo){
+    @if $modo == black{
+        border: solid 2px blueviolet;
+    }
+    @else{
+        border: solid 2px turquoise;
+    }
+}
+
