@@ -1,44 +1,49 @@
 $color-primario: black;
 $color-secundario: white;
-
+$color-terciario: #202020;
 
 //* LISTAS
 $paleta-colores: 
+#676765e9,
+gray,
+rgb(194, 194, 194),
 red,
 green,
 blue,
 pink,
-tomato,
-gray;
+tomato;
+
 
 $font-size:
-15px,
+16px,
 20px,
 24px,
 36px,
-48px;
+48px,
+80px;
 
 //* OPERACIONES
 
 $alto-header: 56px;
 
+// MAPAS
+$boton:(
+    bg-color: black,
+    color: white,
+    border: 2px solid white,
+    border-radius: 2%,
+);
+
 
 //* EXTENDS
 //para optimizar 
-%flex{
+%flex-spa{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.galeria{
-    background-color: black;
-    border: 1px black solid;
-    @extend %flex;
-}
-
 //MIXINS
-
 @mixin flex ($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;

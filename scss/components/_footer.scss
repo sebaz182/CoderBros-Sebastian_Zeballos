@@ -1,8 +1,8 @@
 /* --- FOOTER --- */
 
 .footer {
-    background-color: #202020;
-    color: white;
+    background-color: $color-terciario;
+    color: $color-secundario;
     padding: 10px;
     div{
         div{
@@ -11,7 +11,7 @@
                 font-weight: 200;
             }
             a{
-                color: white;
+                color: $color-secundario;
                 font-size: 20px;
                 padding: 8px; 
             }

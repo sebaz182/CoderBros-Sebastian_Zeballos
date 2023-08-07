@@ -35,17 +35,13 @@ footer {
 }
 
 // Custom Acordeon
-.accordion-item {
-    // border: 1px solid black;
-}
-
 .accordion-button:not(.collapsed){
     background-color: black;
     color: white;
 }
 
 .accordion-button:not(.collapsed)::after{
-    filter: brightness(0%) invert(100%);
+    filter: brightness(0%) invert(75%);
 }
 
 .accordion-button:focus{
