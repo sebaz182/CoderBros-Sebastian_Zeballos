@@ -26,6 +26,16 @@ body {
 footer {
   margin-top: auto; }
 
+.accordion-button:not(.collapsed) {
+  background-color: black;
+  color: white; }
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(100%); }
+
+.accordion-button:focus {
+  box-shadow: inherit; }
+
 .galeria {
   display: flex;
   justify-content: center;
@@ -146,6 +156,46 @@ header nav {
       width: 100%;
       height: 330px;
       object-fit: cover; }
+
+.talentos_mini h2 {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center; }
+
+.talentos_mini .perfiles_mini {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .talentos_mini .perfiles_mini div {
+    width: 200px;
+    height: 250px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 1%;
+    text-align: left;
+    color: white;
+    margin: 15px;
+    box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7); }
+    .talentos_mini .perfiles_mini div h3 {
+      margin-top: 5px;
+      padding-left: 5px;
+      font-size: 25px;
+      font-weight: 600; }
+    .talentos_mini .perfiles_mini div h4 {
+      padding-left: 5px;
+      font-size: 16px;
+      font-weight: 300; }
+    .talentos_mini .perfiles_mini div img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover; }
+
+.faq {
+  margin: 1px; }
 
 /*--- BOTON FIJO WHATSAPP ---*/
 .whatsapp {
