@@ -246,6 +246,10 @@
     border: solid 5px $color-secundario;
     border-radius: 1%;
 
+    box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+
     div {
         position: absolute;
         width: 100%;
@@ -256,11 +260,6 @@
         color: $color-secundario;
         padding: 8px;
         transition: 1s;
-    }
-    & :hover{
-        box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
-        -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
-        -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -337,7 +336,7 @@
 
             & .accordion {
                 margin-top: 22px;
-                margin-bottom: 22px;
+                padding-bottom: 32px;
             }
         }
     }

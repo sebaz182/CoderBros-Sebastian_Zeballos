@@ -220,12 +220,12 @@ header nav {
     object-fit: cover; }
 
 .grid-img {
-  box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
   position: relative;
   border: solid 5px white;
-  border-radius: 1%; }
+  border-radius: 1%;
+  box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 7px 5px 23px 0px rgba(0, 0, 0, 0.7); }
   .grid-img div {
     position: absolute;
     width: 100%;
@@ -234,7 +234,8 @@ header nav {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.666);
     color: white;
-    padding: 8px; }
+    padding: 8px;
+    transition: 1s; }
 
 .cabecera {
   grid-column: span 3; }
@@ -284,7 +285,8 @@ header nav {
   color: black; }
 
 .nosotros section div .accordion {
-  margin-top: 22px; }
+  margin-top: 22px;
+  padding-bottom: 32px; }
 
 /* --- FOOTER --- */
 .footer {
