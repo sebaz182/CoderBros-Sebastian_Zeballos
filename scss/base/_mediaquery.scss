@@ -48,6 +48,13 @@
             padding-right: 50px;
         }
     }
+
+    .servicios {
+        padding: 30px;
+        & .servicios-cont {
+            width: 500px;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -94,7 +101,9 @@
     }
 
     .servicios {
+        padding: 25px;
         & .servicios-cont {
+            width: 550px;
             img {
                 width: 50px;
             }

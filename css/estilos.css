@@ -263,12 +263,12 @@ header nav {
   color: white;
   padding: 70px; }
   .servicios .servicios-cont {
-    width: 400px;
+    width: 450px;
     display: flex;
     flex-direction: row;
     padding-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px; }
+    margin-left: 40px;
+    margin-right: 40px; }
     .servicios .servicios-cont img {
       width: 60px; }
     .servicios .servicios-cont .servicios-cont-txt {
@@ -331,7 +331,11 @@ header nav {
     .titulo p {
       font-size: 15px;
       padding-left: 50px;
-      padding-right: 50px; } }
+      padding-right: 50px; }
+  .servicios {
+    padding: 30px; }
+    .servicios .servicios-cont {
+      width: 500px; } }
 
 @media screen and (max-width: 500px) {
   .hero h1 {
@@ -358,8 +362,12 @@ header nav {
       font-size: 15px;
       padding-left: 40px;
       padding-right: 40px; }
-  .servicios .servicios-cont img {
-    width: 50px; }
-  .servicios .servicios-cont .servicios-cont-txt h2 {
-    font-size: 24px;
-    font-weight: 700; } }
+  .servicios {
+    padding: 25px; }
+    .servicios .servicios-cont {
+      width: 550px; }
+      .servicios .servicios-cont img {
+        width: 50px; }
+      .servicios .servicios-cont .servicios-cont-txt h2 {
+        font-size: 24px;
+        font-weight: 700; } }
