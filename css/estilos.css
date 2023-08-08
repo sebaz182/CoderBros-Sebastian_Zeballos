@@ -357,4 +357,9 @@ header nav {
     .titulo p {
       font-size: 15px;
       padding-left: 40px;
-      padding-right: 40px; } }
+      padding-right: 40px; }
+  .servicios .servicios-cont img {
+    width: 50px; }
+  .servicios .servicios-cont-txt h2 {
+    font-size: 24px;
+    font-weight: 700; } }

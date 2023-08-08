@@ -77,4 +77,17 @@
             padding-right: 40px; 
         }
     }
+    .servicios{
+        & .servicios-cont{
+            img{
+                width: 50px;
+            }
+        }
+        & .servicios-cont-txt{
+            h2{
+                font-size: nth($font-size, 3);
+                font-weight: 700;
+            }
+        }
+    }
 }
