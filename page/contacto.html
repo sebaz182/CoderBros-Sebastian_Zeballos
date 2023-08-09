@@ -21,7 +21,8 @@
         <meta property="og:URL"
             content="https://mellifluous-alfajores-14936f.netlify.app/page/contacto">
         <!-- IMG -->
-        <meta property="og:image" content="https://mellifluous-alfajores-14936f.netlify.app/img/servicios.jpg">
+        <meta property="og:image"
+            content="https://mellifluous-alfajores-14936f.netlify.app/img/servicios.jpg">
         <!-- DESCRIPTION -->
         <meta property="og:description"
             content="Empresa dedicada el desarrollo de software y páginas web, creamos tu marca y el e-commerce que necesites para tu emprendimiento. 
@@ -80,39 +81,41 @@
         <main>
             <section class="container contacto">
                 <div
-                    class="row align-items-center d-flex justify-content-between">
+                    class="row d-flex justify-content-around">
                     <div class="col-lg-6 forms">
                         <h2>Contactanos</h2>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1"
-                                class="form-label">Nombre</label>
-                            <input type="text" class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="Mi nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1"
-                                class="form-label">Email</label>
-                            <input type="email" class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="nombre@ejemplo.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1"
-                                class="form-label">Telefono</label>
-                            <input type="tel" class="form-control"
-                                id="exampleFormControlInput1"
-                                placeholder="+54 341 6808080">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1"
-                                class="form-label">Mensaje</label>
-                            <textarea class="form-control"
-                                id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-dark">Enviar</button>
-                        </div>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label">Nombre</label>
+                                <input type="text" class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="Mi nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label">Email</label>
+                                <input type="email" class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label">Telefono</label>
+                                <input type="tel" class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="+54 341 6808080">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label">Mensaje</label>
+                                <textarea class="form-control"
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-dark">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="col-lg-6 maps">
                         <h2>Visitanos</h2>
